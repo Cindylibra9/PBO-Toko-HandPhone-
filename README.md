@@ -1,4 +1,4 @@
-# PENJELASAN JALANNYA PROGRAM :
+# Penjelasan Jalannya Program (Toko HandPhone) :
 Pada pemrograman “Service HandPhone Android” ini memiliki Class utama yang bernama Main.
 Main-Class ini akan ditujukan pada tampilan di akhiran outputnya nanti. Main-Class sendiri juga digunakan untuk keluaran utama dari semua Class-nya. 
 Semua Class dibawahnya Main itu ada Phone, PhoneUser, Xiaomi, Oppo, dan Vivo. 
