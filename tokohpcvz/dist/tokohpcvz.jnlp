@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="tokohpcvz.jnlp">
+  <information>
+    <title>tokohpcvz</title>
+    <vendor>acer</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\mysql-connector-java-5.1.9.jar" size="724213" download="eager" />
+    <jar href="lib\sqlite-jdbc-3.27.2.jar" size="7103306" download="eager" />
+    <jar href="tokohpcvz.jar" size="14772" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="tokohpcvz.Main"  name="tokohpcvz" />
+  <update check="always"/>
+</jnlp>
