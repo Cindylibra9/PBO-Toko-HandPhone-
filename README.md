@@ -39,90 +39,90 @@ Dan yang terakhir juga ada DB Status di pojokan kanan atas aplikasi untuk sebaga
 
 
 ## Design Class Diagram
-class Pembeli{<<abstract>>}
-    Pembeli <|-- Tunai
-    Pembeli <|-- Kredit
-    Pembeli "1"--o"*" Detail : has
-    Pembeli : #IntegerProperty IDpembeli
-    Pembeli : #StringProperty nama
-    Pembeli : #StringProperty alamat
-    Pembeli : +IDpembeliProperty()
-    Pembeli : +namaProperty()
-    Pembeli : +alamatProperty()
-class Tunai{
-      +StringProperty tgl_bayar
-      +tgl_bayarProperty()
-    }
-class Kredit{
-      +StringProperty Kontak
-      +kontakProperty()
-    }
-class Detail{
-      -StringProperty jenisHP
-      -DoubleProperty hargaHP
-      +setJenisHp(String jenisHp)
-      +setHargaHp(double hargaHp)
-      +jenisHpProperty()
-      +hargaHPProprety()
-    }
+    class Pembeli{<<abstract>>}
+        Pembeli <|-- Tunai
+        Pembeli <|-- Kredit
+        Pembeli "1"--o"*" Detail : has
+        Pembeli : #IntegerProperty IDpembeli
+        Pembeli : #StringProperty nama
+        Pembeli : #StringProperty alamat
+        Pembeli : +IDpembeliProperty()
+        Pembeli : +namaProperty()
+        Pembeli : +alamatProperty()
+    class Tunai{
+        +StringProperty tgl_bayar
+        +tgl_bayarProperty()
+        }
+    class Kredit{
+        +StringProperty Kontak
+        +kontakProperty()
+        }
+    class Detail{
+        -StringProperty jenisHP
+        -DoubleProperty hargaHP
+        +setJenisHp(String jenisHp)
+        +setHargaHp(double hargaHp)
+        +jenisHpProperty()
+        +hargaHPProprety()
+        }
 
 ## Design Class Diagram forJavaFX and DataBase
-class Pembeli{<<abstract>>}
-    Pembeli <|-- Tunai
-    Pembeli <|-- Kredit
-    Pembeli "1"--o"*" Detail : has
-    Pembeli --o Tokohpdatamodel : Data Modeling
-    Pembeli : #IntegerProperty IDpembeli
-    Pembeli : #StringProperty nama
-    Pembeli : #StringProperty alamat
-    Pembeli : +IDpembeliProperty()
-    Pembeli : +namaProperty()
-    Pembeli : +alamatProperty()
-class Tunai{
-      +StringProperty tgl_bayar
-      +tgl_bayarProperty()
-    }
-class Kredit{
-      +StringProperty Kontak
-      +kontakProperty()
-    }
-class Detail{
-      -StringProperty jenisHP
-      -DoubleProperty hargaHP
-      +setJenisHp(String jenisHp)
-      +setHargaHp(double hargaHp)
-      +jenisHpProperty()
-      +hargaHPProprety()
-    }
-class Tokohpdatamodel{
-      +Connection conn
-      +addPembeli(Tunai pembeli)
-      +addPembeli(Kredit pembeli)
-      +getTunaiPembeli()
-      +getKredit()
-      +getDetail(int idpembeli)
-      +nextIDPembeli()
-      +nextJenisHP(int idpembeli)
-      +addDetail(int IDPembeli, Detail acc)
-    }
-    FormPembeliController --> Tokohpdatamodel : Data Control
-class FormPembeliController{
-      +Initializable
-      handleTambahkanButton(ActionEvent event)
-      handleTambahkanDataButton(ActionEvent event)
-      handleHapusButton(ActionEvent event)
-      handleMuatUlangButton(ActionEvent event)
-      initialize(URL location, ResourceBundle resources)
-      viewDataDetail(int IDPembeli)
-    }
-    FormPembeli ..> FormPembeliController : Form Control
-class FormPembeli{
-    }
-    Tokohpdatamodel --> DB : DB Connection
-class DB{
-      getConnection()
-      getConnection(String driver)
-    }
+    class Pembeli{<<abstract>>}
+        Pembeli <|-- Tunai
+        Pembeli <|-- Kredit
+        Pembeli "1"--o"*" Detail : has
+        Pembeli --o Tokohpdatamodel : Data Modeling
+        Pembeli : #IntegerProperty IDpembeli
+        Pembeli : #StringProperty nama
+        Pembeli : #StringProperty alamat
+        Pembeli : +IDpembeliProperty()
+        Pembeli : +namaProperty()
+        Pembeli : +alamatProperty()
+    class Tunai{
+        +StringProperty tgl_bayar
+        +tgl_bayarProperty()
+        }
+    class Kredit{
+        +StringProperty Kontak
+        +kontakProperty()
+        }
+    class Detail{
+        -StringProperty jenisHP
+        -DoubleProperty hargaHP
+        +setJenisHp(String jenisHp)
+        +setHargaHp(double hargaHp)
+        +jenisHpProperty()
+        +hargaHPProprety()
+        }
+    class Tokohpdatamodel{
+        +Connection conn
+        +addPembeli(Tunai pembeli)
+        +addPembeli(Kredit pembeli)
+        +getTunaiPembeli()
+        +getKredit()
+        +getDetail(int idpembeli)
+        +nextIDPembeli()
+        +nextJenisHP(int idpembeli)
+        +addDetail(int IDPembeli, Detail acc)
+        }
+        FormPembeliController --> Tokohpdatamodel : Data Control
+    class FormPembeliController{
+        +Initializable
+        handleTambahkanButton(ActionEvent event)
+        handleTambahkanDataButton(ActionEvent event)
+        handleHapusButton(ActionEvent event)
+        handleMuatUlangButton(ActionEvent event)
+        initialize(URL location, ResourceBundle resources)
+        viewDataDetail(int IDPembeli)
+        }
+        FormPembeli ..> FormPembeliController : Form Control
+    class FormPembeli{
+        }
+        Tokohpdatamodel --> DB : DB Connection
+    class DB{
+        getConnection()
+        getConnection(String driver)
+        }
     
 ### Penjelasan Simbol pada Class Diagram :
 Class diagram adalah model statis yang menggambarkan struktur dan deskripsi class serta hubungannya antara class. 
