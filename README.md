@@ -1,7 +1,12 @@
 # PBO (Toko HandPhone Cindy-Vadella-Zefanya)
 
+Nama Kelompok :
+- Cindy                          (1957051002) : Membuat 2 class java kodingan pemrograman, ERD, dan Class diagram.
+- Vadella Nikita Ayumi           (1917051054) : Membuat 4 class java kodingan pemrograman.
+- Zefanya Jhon Poltak Panggabean (1917051070) : Membuat 2 class java kodingan pemrograman, Penjelasan jalannya program aplikasi & fungsi simbol yang digunakan.
+
 ## Penjelasan Proses Jalannya Program :
-Pada Program Aplikasi yang telah kami rancang ini adalah tentang “Toko Pembelian HandPhone”. DImana nanti user (kasir toko) akan menginput formulir data diri para pengunjung toko HandPhone setelah si pengunjung tersebut sudah mendapatkan HP yang diinginkannya. 
+Pada Program Aplikasi yang telah kami rancang ini adalah tentang “Toko Pembelian HandPhone”. Dimana nanti user (kasir toko) akan menginput formulir data diri para pengunjung toko HandPhone setelah si pengunjung tersebut sudah mendapatkan HP yang diinginkannya. 
 Dan lalu untuk sebagai adanya bukti transaksi pembayaran tersebut, maka digunakanlah aplikasi ini yang memudahkan traksaksi toko HandPhone ini berjalan dengan baik dan tanpa adanya kecurangan antara si kasir toko maupun si pembeli.
 Pada tools Tunai, lihat layar monitor yang disebelah kiri. Kemudian diharapkan user memasukkan ID Pembeli terlebih dahulu untuk menghindari terjadi kekeliruan identitas para pembeli HP. 
 Lalu memasukkan Nama pembeli secara lengkap, Alamat si pembeli secara detail, dan Tanggal Pembelian HP dengan benar. 
