@@ -40,8 +40,10 @@ Dan yang terakhir juga ada DB Status di pojokan kanan atas aplikasi untuk sebaga
     
 ### Penjelasan Simbol pada ERD :
 - Entitas : objek atau konsep yang ingin Anda simpan informasinya.
-- Arti simbol || adalah One. Jadi kalau ||--|| adalah One To One.
-- Arti simbol }| atau |{ adalah Many. Jadi kalau ||--|{ adalah One To Many (dan begitupun sebaliknya).
+- Arti simbol Relasi dari || adalah One. Jadi kalau ||--|| adalah Relasi/Penghubung One To One.
+- Arti simbol Relasi dari }| atau |{ adalah Many. Jadi kalau ||--|{ adalah Relasi/Penghubung One To Many (dan begitupun sebaliknya).
+- "is" pada Relasi, maksudnya adalah class utama akan mengikuti aturan class lain yang di pilih si user.
+- "has" pada Relasi, maksudnya adalah class utama akan berjalan secara teratur jika terhubung dengan class lain yang bersangkutan tersebut.
 
 
 ## Design Class Diagram
@@ -134,7 +136,7 @@ Dan yang terakhir juga ada DB Status di pojokan kanan atas aplikasi untuk sebaga
 Class diagram adalah model statis yang menggambarkan struktur dan deskripsi class serta hubungannya antara class. 
 Class diagram mirip ER-Diagram pada perancangan  database, bedanya pada ER-diagram tidak terdapat operasi/methode tapi hanya atribut. 
 Class terdiri dari nama kelas, atribut dan operasi/methode.
-Atribut dan operation (metode) dapat memiliki salah satu sifat berikut :
+Atribut dan operation (metode) yang kami gunakan ialah sebagai berikut :
 - Protected, hanya dapat dipanggil oleh class yang bersangkutan dan  class turunannya. methode diawali dg tanda “#”.
 - Private, hanya bisa dipanggil dari dlm kelas itu sendiri.  methode/atribut diawali “-“.
 - Public, dapat dipanggil  dari semua objek. methode/atribut diawali tanda “+”.
@@ -144,3 +146,4 @@ Atribut dan operation (metode) dapat memiliki salah satu sifat berikut :
 - Relasi Dependency dengan simbol ..> ialah, Relasi antarkelas dengan makna kebergantungan antarkelas.
 - Jika terdapat "1" pada salah satu atau kedua ujung relasi, itu artinya "one". 
 - Jika terdapat "*" pada salah satu atau kedua ujung relasi, itu artinya "many".
+- Tanda () ialah metode pada pemrograman agar kode program muncul di tampilan monitor saat di output-kan.
